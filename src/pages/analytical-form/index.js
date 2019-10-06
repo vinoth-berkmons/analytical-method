@@ -92,6 +92,8 @@ function AnalyticalForm(props) {
     }
     if (!newState.id || (newState.id && newState.id.length === 0)) {
       newState.error = 'Must provide an ID'
+    } else {
+      newState.error = null;
     }
     setState(newState);
   };
